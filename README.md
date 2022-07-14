@@ -1,5 +1,21 @@
+# Bem vindo ao projeto Zoo Functions
 
-# Boas-vindas ao repositório do projeto Zoo Functions!
+## Comentários
+Último projeto do módulo de Fundamentos do Desenvolvimento Web. Este projeto consiste em criar funções, desenvolver testes, e criar testes antes de estruturar a função, metodo conhecido como TDD.
+
+---
+
+## Instalação do projeto localmente:
+
+1. No terminal, em um diretório de sua escolha, clonar o repositório:
+
+```
+git clone git@github.com:lucas-da-silva/trybe-zoo-functions.git
+```
+
+2. Dentro do repositório, no diretório tests, contém os testes, no src, estão as funções, e no data, está o objeto que é utilizado durante todo o projeto. :rocket:
+> Existem funções e testem que foram criadas pela Trybe, os que eu crie ou modifiquei estão especificados nos requisitos.
+--- 
 
 <details>
 <summary><strong>🧑‍💻 O que deverá ser desenvolvido</strong></summary><br />
@@ -14,9 +30,9 @@
   
   A sequência dos requisitos desse projeto foi disposta de forma a te proporcionar a experiência de entender na prática como o desenvolvimento orientado a testes ajuda a garantir um código de qualidade. Para isso, você vai implementar testes para funções já existentes, percebendo os casos de uso da sua aplicação e garantindo que ela está funcionando da maneira correta! 🚀 
 
-# Requisitos Obrigatórios
+</details>
 
-⚠️ **PULL REQUESTS COM ISSUES NO LINTER NÃO SERÃO AVALIADAS. ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠️
+## Requisitos
 
 ## 1. Implemente a função `getSpeciesByIds`
 
@@ -35,14 +51,6 @@
 
   - Se a função receber vários `ids`, retorne todas as espécies referente a esses `ids`.
 
-**O que será testado:**
-
-- Caso receba nenhum parâmetro, é necessário retornar um array vazio;
-
-- Ao receber como parâmetro um único `id`, retorna um array com a espécie referente a esse `id`;
-
-- Ao receber mais de um `id`, retorna um array com as espécies referentes aos `ids`.
-
 </details>
 
 ---
@@ -58,10 +66,6 @@
   - Os animais devem ter essa idade ou serem mais velhos.
 
 - Retorne um valor booleano.
-
-**O que será testado:**
-
-- Ao passar o nome de uma espécie e uma idade, testa se todos os animais desta espécie possuem a idade mínima especificada.
 
 </details>
 
@@ -87,15 +91,6 @@
     responsibleFor: ['0938aa23-f153-4937-9f88-4858b24d6bce', 'e8481c1d-42ea-4610-8e11-1752cfc05a46'],
   }
 ```
-
-**O que será testado:**
-
-- Sem parâmetros, deve retornar um objeto vazio;
-
-- Quando informado o primeiro nome da pessoa colaboradora, deve retornar o objeto da pessoa colaboradora;
-
-- Quando informado o último nome da pessoa colaboradora, deve retornar o objeto da pessoa colaboradora;
-	
 
 </details>
 
@@ -141,16 +136,6 @@ Considerando a boa prática de dividir o código em partes menores, o arquivo te
 
         Você pode ler mais sobre a [função construtora **Error**, neste link.](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Error)
 
-  **O que será testado:**
-
-  - Retorna `true` se o `id` passado for de uma pessoa gerente;
-
-  - Retorna `false` se o `id` passado não for de uma pessoa gerente;
-
-  - Se o `id` passado for da pessoa gerente, retorna um array contendo nome e sobrenome das pessoas colaboradoras que ela é responsável;
-
-  - Se o `id` passado **não** for da pessoa gerente, dispara um erro com a mensagem: `'O id inserido não é de uma pessoa colaboradora gerente!'`.
-
 </details>
 
 ---
@@ -178,14 +163,6 @@ A função `countAnimals` é responsável por contar a quantidade e animais que 
   - ao receber o argumento `{ specie: 'penguins' }`, retorna apenas a quantidade (número) de pinguins que residem no zoológico;
 
   - ao passar o argumento `{ specie: 'giraffes', sex: 'female' }`, retorna apenas a quantidade (número) de girafas fêmeas que residem no zoológico.
-
-**O que será testado:**
-
-- Sem parâmetros, retorna todas as espécies e a quantidade de residentes de cada uma;
-
-- Recebendo como parâmetro um objeto com a chave `specie`, retorna a quantidade de animais daquela espécie;
-
-- Recebendo como parâmetro um objeto com a chave `specie` e `sex`, retorna a quantidade de animais daquela espécie, no sexo selecionado.
 
 </details>
 
@@ -359,28 +336,6 @@ calculateEntry(entrants);
 187.94
 ```
 
-**O que será testado:**
-
-Na função `countEntrants`:
-
-  - Ao receber um array de visitantes, retorna um objeto com a contagem.
-
-Na função `calculateEntry`:
-
-  - Retorna 0 se nenhum argumento for passado;
-
-  - Retorna 0 se um objeto vazio for passado;
-
-  - Ao receber um array de pessoas com 3 crianças, 2 pessoas adultas e 1 pessoa mais velha retorna o valor correto;
-
-  - Ao receber um array com 1 pessoa adulta retorna o valor correto;
-
-  - Ao receber um array com 1 pessoa mais velha retorna o valor correto;
-
-  - Ao receber um array com 1 criança retorna o valor correto;
-
-  - Ao receber um array com 1 criança e 1 pessoa mais velha retorna o valor correto.
-
 </details>
 
 ---
@@ -437,17 +392,6 @@ As informações dos horários dos animais devem ser disponibilizadas em uma con
 
 > **De olho na dica 👀:** Quebre o problema em funções menores para que fique mais simples de administrar a responsabilidade de cada uma delas.
 
-**O que será testado:**
-
-- Se o nome de um animal for passado, deverá retornar um array com os dias em que ele estará em exibição;
-
-- Sem parâmetros, retorna os horários para cada dia e quais animais estarão disponíveis;
-
-- Com parâmetros que não sejam nem um animal e nem um dia, retorna os horários para cada dia e quais animais estarão disponíveis;
-
-- Se um único dia for passado, retorna os horários para aquele dia e quais animais estarão disponíveis.
-
-
 </details>
 
 ---
@@ -468,10 +412,6 @@ A função recebe um parâmetro `id` referente à pessoa colaboradora e a partir
 - Encontre o animal mais velho daquela espécie;
 
 - Retorne um array com as informações do animal mais velho daquela espécie.
-
-**O que será testado:**
-
-- Passado o id de uma pessoa colaboradora, encontra a primeira espécie de animal gerenciado por essa pessoa, e retorna um array com nome, sexo e idade do animal mais velho dessa espécie.
 
 </details>
 
@@ -598,18 +538,6 @@ Você pode ler mais sobre a [função construtora **Error**, neste link.](https:
 <br />
 
 > **De olho na dica 👀:** Crie funções que dividam as tarefas em partes menores. Por exemplo, você pode criar uma função `getSpecies` encarregada somente por buscar o nome das espécies que a pessoa é responsável.
-
-**O que será testado:**
-
-- Se o objeto de opções tiver a propriedade `name`, retorna somente a pessoa correspondente;
-
-- A propriedade name do objeto de opções também funciona usando o segundo nome;
-
-- Se o objeto de opções tiver a propriedade `id`, retorna somente a pessoa correspondente;
-
-- Sem parâmetros, retorna uma lista com a cobertura de todas as pessoas colaboradoras;
-
-- Caso não haja nenhuma pessoa com o `name` ou `id` especificados deverá ser lançado um `error`.
 
 </details>
 
@@ -852,25 +780,11 @@ Para isso:
   
 > **De olho na dica 👀:** Você não precisa diferenciar os filtros de sexo entre `female` ou `male`, apenas por `sex`.
 
-**O que será testado:**
-
-- Sem parâmetros, retorna animais categorizados por localização;
-
-- Sem a opção `includeNames` especificada, retorna animais categorizados por localização;
-
-- Com a opção `includeNames: true` especificada, retorna nomes de animais;
-
-- Com a opção `sorted: true` especificada, retorna nomes de animais ordenados;
-
-- Com a opção `sex: 'female'` ou `sex: 'male'` especificada, retorna somente nomes de animais macho/fêmea;
-
-- Com a opção `sex: 'female'` ou `sex: 'male'` especificada e a opção `sorted: true` especificada, retorna somente nomes de animais macho/fêmea com os nomes dos animais ordenados;
-
 </details>
 
 ---
 
-# Requisitos Bônus
+## Requisitos Bônus
 
 ## 15. Obtenha 100% de cobertura de testes na função `handlerElephants`
 
