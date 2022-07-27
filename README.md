@@ -10,7 +10,7 @@
 1. No terminal, em um diretório de sua escolha, clonar o repositório:
 
 ```
-git clone git@github.com:lucas-da-silva/trybe-zoo-functions.git
+git clone git@github.com:lucas-da-silva/zoo-functions.git
 ```
 
 2. Dentro do repositório, no diretório tests, contém os testes, no src, estão as funções, e no data, está o objeto que é utilizado durante todo o projeto. :rocket:
