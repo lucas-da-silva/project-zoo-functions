@@ -1,4 +1,4 @@
-# Bem vindo ao projeto Zoo Functions
+# Bem vindo ao repositório do projeto Zoo Functions
 
 ## Comentários
 Último projeto do módulo de Fundamentos do Desenvolvimento Web. Este projeto consiste em criar funções, desenvolver testes, e criar testes antes de estruturar a função, metodo conhecido como TDD.
